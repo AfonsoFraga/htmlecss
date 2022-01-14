@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+            }
+        header{    /* cabeçalho */
+            white-space: 600px;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            }
+        header > h1{
+            text-align: center;
+            color: rgb(241, 23, 8);
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px; /* ou border-radius 10px 30px 20px 15px pra confirgurar cada borda diferente 
+            ou border-right: 30px pra direita border-left: esquerda;*/
+            box-shadow: 4px 4px 4px black ;
+
+            
+           
+            }
+
+        footer{ 
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 2px;
+             }
+
+        footer >p {
+                 margin: 0px;
+             }
+
+        nav{       /* menu */
+           
+            background-color: rgb(218, 204, 204);
+            padding: 3px;
+            box-shadow: 2px 2px 1px rgba(43, 39, 39, 0.267);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color:  red;
+        }
+        section {       /* seção */
+
+        }
+        article {         /* artigo */
+            background-color: lightgray;
+
+        }
+        aside{     /* conteúdo relativo ao artigo */
+            background-color: rgb(211, 211, 211);
+            text-align: center;
+             }
+        aside > p{
+            text-align: center;
+            color: seagreen;
+            
+        }
+        div#bola {
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header> 
+        <h1>
+            Meu Site
+        </h1>
+        <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>          
+        </nav>
+    </header>
+
+    <main>
+        <section id= "assunto">
+            Esportes Política Tecnologia
+        </section>
+
+        <section id= "noticias">
+            <article>
+                <h1>Notícias sobre o Brasil</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, neque. Quod, architecto! Provident totam cum voluptates? Consequuntur, veritatis! Tempora vero eos, voluptatem modi quas nemo! Possimus sequi tenetur nulla impedit.</p>
+                <aside>
+                    <p> Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+            Desenvolvido por Afonso Henrique Fraga de Souza
+    </footer>
+    <div id= "bola"
+    
+    ></div>
+ 
+</body>
+</html>

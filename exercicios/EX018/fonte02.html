@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        /* site para pergar fontes externas 'dafont.com'*
+        baixar o arquivo e copiar as fontes para o diretório do programa 
+        
+        para pegar fontes de sites já prontos usar a extensão do google fonts ninja 
+        ela extrai dados da fonte de qualquer site com estilo tamanho e cor e para utilizar a fonte identificada use
+        o site dafont.com
+        
+        fontes dentro de imagens whatfonts.com fontsquirrel.com myfonts.com 
+        três softwers para poder identificar nas imagens qual o tipo de fonte foi utilizado
+        */
+
+        
+        @font-face {
+            font-family:'Love';
+            src: url('Fontes/love\ story.ttf') format('truetype');
+            font-weight:normal;
+            font-style: normal;
+            /* tipos de format()
+            opentype (otf)
+            truetype (ttf)
+            embedded-opentype
+            truetyoe-aat (Apple Advanced Typografy)
+            */
+        }
+    
+        body{
+            font
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+        h1{
+            font-family: 'Love', Times, serif;
+            font-size: 3em;
+           
+        }
+        h2{
+            font-family: 'Love', Helvetica, sans-serif;
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Título
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, beatae inventore repellendus sed quas suscipit ullam vel earum repellat laudantium nemo porro delectus amet dicta ipsa quidem. Ullam, earum est.</p>
+    <h2>
+        Subtítulo
+    </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat minus rerum id blanditiis neque saepe, labore, dolorum sunt, voluptatem modi velit quaerat deserunt fugit excepturi quod similique vero repudiandae adipisci.</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+body{
+    background-color: #A3A1A8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color:#ee4006;
+}
+h1#principal {
+    color: #FF665A;
+    text-align: center;
+    /* para fazer a identificação no HTML usar id
+    no CSS usar #
+    para fazer Classes no HTML usar class no CSS .
+    em um documento só podemos utilizar um id
+    para utilizar mais de um elelemento igual se usa classe 
+    tambem podemos usar id e class em um mesmo elemento*/
+}
+
+h2 {
+    color: green;
+}
+.destaque {
+    color: blue;
+    /* para dar destaque a uma parte do texto usar span no html e utilizar a classe para dar o destaque */
+}
+.fundo {
+    background-color: rgb(23, 228, 228);
+    /* podemos utilizar várias classes em um mesmo identicador exemplo h1 com .destaque e .fundo h1 class "destaque espaco fundo"*/
+}
+.basico{
+color: #bbac03;
+}
+
+.intermediario{
+    color: #c7271b;
+
+}
+h2{
+    color: #FFF587;
+}
