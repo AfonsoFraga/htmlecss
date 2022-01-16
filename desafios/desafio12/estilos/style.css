@@ -59,13 +59,12 @@ section {
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte-div);
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 section > p {
-    padding-bottom: 1em;
-    width: 300px;  
-     
+    padding-bottom: 2em;
+        
 }
 
 section.normal {
@@ -76,12 +75,16 @@ section.normal {
 section.imagem {
     background-color: var(--cor04);
     color: white;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed; /* efeito paralax fixa imagens na rolagem do site */
 }
 
 section.imagem > p { 
     display:inline-block;   
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.226);
+    text-shadow: 2px 2px 0px black;
 }
 
 section#img01 {
