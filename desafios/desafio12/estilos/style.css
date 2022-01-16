@@ -17,11 +17,12 @@
 * {   
     margin: 0px;
     padding: 0px;*/
+    font-size: 1em;
 }
 
 html, body{
     min-height: 100vh;
-    background-color: darkgray
+    background-color: darkgray;
     font-family: var(--fonte-padrao);
 }
 
@@ -32,7 +33,9 @@ header {
       
 }
 header > h1 {
+    font-family: var(--fonte-titulo);
     font-variant:small-caps;
+    font-size: 10vw; /* 10% da largura da teka que não é a melhor maneira vamos aprender uma melh0r maneira mais para frente */
     color: var(--cor01);
     padding-top: 50px;
 }
@@ -55,6 +58,8 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte-div);
+    font-size: 3vw;
 }
 
 
@@ -69,7 +74,7 @@ section.imagem {
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline;
     background-color: rgba(0, 0, 0, 0.226);
 }
 
