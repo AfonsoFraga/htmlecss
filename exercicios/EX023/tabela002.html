@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;            
+        }
+        table{
+            position: relative; /* para fixar o cabeçalho no topo da rolagem */
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightslategray;
+        }
+        /*tbody > tr:nth-child(2n) { colore intercalando a cada duas linhas o destaque para facilitar a visualização da tabela pode se usar odd linha impar ou even par}*/
+       
+        tbody >tr:nth-child(odd) {
+            background-color: lightskyblue;
+            color: black;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(13, 71, 107);
+            color: rgb(191, 206, 221);
+        }
+       
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky; /* para fixar o cabeçalho no topo da rolagem */
+            top: -1px;/* para retirar uma pequena margem no cabeçalho no topo da rolagem */
+            background-color: gray;            
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        td.id {
+            text-align: center;
+        }
+        p{
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <!-- ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPTION
+                THEAD - CABEÇA
+                    TR,TD,TH
+                TBODY - CORPO
+                    TR,TD,TH
+                TFOOT - PE
+                    TR,TD,TH       
+        -->
+        
+    </h1>
+    <TAble>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+        <THead>
+            <tr>
+                <th style="width: 50px" >Posição</th> 
+                <th scope="col">Estado</th> <!--usar sempre scope para identificação dos sites parcerios muito importante e valioso  -->
+                <th scope="col" style="width: 100px">População</th> <!-- aqui o style é utilizado para definir a largura da coluna-->               
+            </tr> 
+        </THead>
+
+        <TBody>
+            <tr>
+                <td class="id">1</td>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td class="id">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21.411.923</td>
+            </tr>
+
+            <tr>
+                <td class="id">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463.349</td>
+            </tr>
+
+            <tr>
+                <td class="id">4</td>
+                <td>Bahia</td>
+                <td class="num">14.985.284</td>
+            </tr>
+
+            <tr>
+                <td class="id">5</td>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+
+            <tr>
+                <td class="id"> 6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.466.630</td>
+            </tr>
+
+            <tr>
+                <td class="id">7</td>
+                <td>Pernanbuco</td>
+                <td class="num">9.674.793</td>
+            </tr>
+
+            <tr>
+                <td class="id">8</td>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+
+            <tr>
+                <td class="id">9</td>
+                <td>Pará</td>
+                <td class="num">8.777.124</td>
+            </tr>
+
+            <tr>
+                <td class="id">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7.338.473</td>
+            </tr>
+
+            <tr>
+                <td class="id">11</td>
+                <td>Goiás</td>
+                <td class="num">7.206.589</td>
+            </tr>
+
+            <tr>
+                <td class="id">12</td>
+                <td>Maranhão</td>
+                <td class="num">7.153.262</td>
+            </tr>
+
+            <tr>
+                <td class="id">13</td>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+
+            <tr>
+                <td class="id">14</td>
+                <td>Espírito Santo</td>
+                <td class="num">4.108.508</td>
+            </tr>
+
+            <tr>
+                <td class="id">15</td>
+                <td>Paraíba</td>
+                <td class="num">4.059.905</td>
+            </tr>
+
+            <tr>
+                <td class="id">16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.567.234</td>
+            </tr>
+
+            <tr>
+                <td class="id">17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.560.903</td>
+            </tr>
+
+            <tr>
+                <td class="id">18</td>
+                <td>Alagoas</td>
+                <td class="num">3.365.351</td>
+            </tr>
+
+            <tr>
+                <td class="id">19</td>
+                <td>Piauí</td>
+                <td class="num">3.289.290</td>
+            </tr>
+
+            <tr>
+                <td class="id">20</td>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+
+            <tr>
+                <td class="id">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.839.188</td>
+            </tr>
+
+            <tr>
+                <td class="id">22</td>
+                <td>Sergipe</td>
+                <td class="num">2.338.474</td>
+            </tr>
+
+            <tr>
+                <td class="id">23</td>
+                <td>Rondônia</td>
+                <td class="num">1.815.278</td>
+            </tr>
+
+            <tr>
+                <td class="id">24</td>
+                <td>Tocantins</td>
+                <td class="num">1.607.363</td>
+            </tr>
+
+            <tr>
+                <td class="id">25</td>
+                <td>Acre</td>
+                <td class="num">906.876</td>
+            </tr>
+
+            <tr>
+                <td class="id">26</td>
+                <td>Amapá</td>
+                <td class="num">877.613</td>
+            </tr>
+
+            <tr>
+                <td class="id">27</td>
+                <td>Roraima</td>
+                <td class="num">652.713</td>
+            </tr> 
+
+        </TBody>
+
+        <TFoot>
+            <tr>
+                <th></th>
+                <th scope="row">Total da População</th>
+                <strong>
+                    <td class="num">210.147.125</td>
+                </strong>
+            </tr>
+        </TFoot>
+    </TAble>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit repellat minima animi dolor reiciendis mollitia voluptas quo deserunt molestias culpa eos, quisquam nulla nam voluptatum obcaecati commodi repudiandae nemo doloribus.</p>
+
+
+    
+</body>
+</html>
